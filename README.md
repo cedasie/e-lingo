@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
--> 30 marketing skeleton
+Next step -> Authentication
 
 First, run the development server:
 
