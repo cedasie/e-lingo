@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
+        <link rel="icon" href="/mascot.svg" sizes="any" />
         <body className={font.className}>{children}</body>
       </html>
     </ClerkProvider>
