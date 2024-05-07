@@ -1,4 +1,4 @@
-This is a e-learning project with Nextjs, Typescript, Tailwindcss.
+This is an e-learning project with Nextjs, Typescript, Tailwindcss.
 
 ## Features
 
