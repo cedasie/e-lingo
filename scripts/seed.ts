@@ -65,6 +65,30 @@ const main = async () => {
         order: 1,
         title: "Nouns",
       },
+      {
+        id: 2,
+        unitId: 1, // unit 1 learn the basics...)
+        order: 2,
+        title: "verbs",
+      },
+      {
+        id: 3,
+        unitId: 1, // unit 1 learn the basics...)
+        order: 3,
+        title: "verbs",
+      },
+      {
+        id: 4,
+        unitId: 1, // unit 1 learn the basics...)
+        order: 4,
+        title: "verbs",
+      },
+      {
+        id: 5,
+        unitId: 1, // unit 1 learn the basics...)
+        order: 5,
+        title: "verbs",
+      },
     ]);
 
     await db.insert(schema.challenges).values([
@@ -91,7 +115,7 @@ const main = async () => {
         challengeId: 1,
         imageSrc: "/woman.svg",
         correct: false,
-        text: "el mujer",
+        text: "la mujer",
         audioSrc: "/es_woman.mp3",
       },
       {
