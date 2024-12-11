@@ -7,7 +7,12 @@ import { useAudio, useWindowSize, useMount } from "react-use";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 
-import { challengeOptions, challenges, lessons } from "@/db/schema";
+import {
+  challengeOptions,
+  challenges,
+  lessons,
+  userSubscription,
+} from "@/db/schema";
 import { upsertChallengeProgress } from "@/actions/challenge-progress";
 import { usePracticeModal } from "@/store/use-practice-modal";
 
@@ -27,7 +32,11 @@ type Props = {
     completed: boolean;
     challengeOptions: (typeof challengeOptions.$inferSelect)[];
   })[];
-  userSubscription: any; // TODO: replace with subscription db type
+  userSubscription:
+    | (typeof userSubscription.$inferSelect & {
+        isActive: boolean;
+      })
+    | null;
 };
 
 export const Quiz = ({
