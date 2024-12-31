@@ -10,6 +10,7 @@
     "db:studio": "npx drizzle-kit studio",
     "db:push": "npx drizzle-kit push",
     "db:seed": "bun ./scripts/seed.ts",
+    "db:prod": "bun ./scripts/prod.ts",
     "db:reset": "bun ./scripts/reset.ts"
   },
   "dependencies": {
